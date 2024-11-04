@@ -154,10 +154,13 @@ button:hover {
   @media only screen and (max-width: 27rem) {
     body {
         align-items: flex-start;
+        max-height: 100vh;
+        max-height: 100dvh;
     }
 
     #weather-container {
-        height: 100vh;
+        max-height: 100vh;
+        max-height: 100dvh;
         width: 100%;
         padding: 1rem;
 
