@@ -160,6 +160,8 @@ button:hover {
     }
 
     #weather-container {
+        height: 100vh;
+        height: 100dvh;
         width: 100%;
         padding: 0;
 
@@ -169,7 +171,7 @@ button:hover {
 
         border-radius: 1rem;
         /* other styles */
-        background: rgba(39, 39, 39, 0.205);
+        background: rgba(39, 39, 39, 0.15);
         backdrop-filter: blur(10px);
         /* fallback for old browsers */
         -webkit-backdrop-filter: blur(60px);
