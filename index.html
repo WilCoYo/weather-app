@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
 </head>
 
-<body> 
+<body id="vanta"> 
     <div id="weather-container">
-        <h2>Weather App</h2>
-        <input  type="text" id="city" placeholder="Enter City">
-        <button onclick="getWeather()">Search</button>
+        <div id="weather-container-contents">
+            <h2><a href="index.html">Weather.dev</a></h2>
+            <input  type="text" id="city" placeholder="Enter City">
+            <button onclick="getWeather()">Search</button>
 
-        <img id="weather-icon" alt="Weather Icon">
+            <img id="weather-icon" alt="Weather Icon">
 
-        <div id="temp-div"></div>
+            <div id="temp-div"></div>
 
-        <div id="weather-info"></div>
+            <div id="weather-info"></div>
 
-        <div id="hourly-forecast"></div>
+            <div id="hourly-forecast"></div>
+        </div>
     </div>   
     <script src="./script.js"></script>
 </body>

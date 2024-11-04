@@ -58,8 +58,8 @@ function displayWeather(data) {
         `;
 
         const weatherHtml = `
-            <p>${cityName}</p>
-            <p>${description}</p>
+            <p id="city-name">${cityName}</p>
+            <p id="weather-description">${description}</p>
         `;
 
         tempDivInfo.innerHTML = temperatureHTML;
@@ -109,3 +109,13 @@ hourlyForecast.addEventListener("wheel", (event) => {
     // Scroll horizontally based on the delta
     hourlyForecast.scrollLeft += event.deltaY;
 });
+
+
+VANTA.CLOUDS({
+  el: "#vanta",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00
+})
