@@ -157,6 +157,10 @@ button:hover {
   
 
   @media only screen and (max-width: 27rem) {
+    #vanta {
+        height: 100vh;
+        width: 100%;
+    }
     #weather-container {
         height: 100vh;
         width: 100%;
