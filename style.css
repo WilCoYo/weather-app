@@ -4,8 +4,6 @@ html {
 }
 
 body {
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     font-family: "Roboto", serif;
     display: flex;
     align-items: center;
@@ -15,9 +13,6 @@ body {
 }
 
 #weather-container {
-   
-
-
     width: 25rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -157,32 +152,46 @@ button:hover {
   
 
   @media only screen and (max-width: 27rem) {
-    #vanta {
-        height: 100vh;
-        width: 100%;
+    body {
+        align-items: flex-start;
     }
+
     #weather-container {
         height: 100vh;
         width: 100%;
-        margin: 0;
-        padding: 0;
-        border-radius: 0;
-        overflow: hidden;
-        
+        padding: 1rem;
+
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
+
+        border-radius: 1rem;
+        /* other styles */
+        background: rgba(39, 39, 39, 0.205);
+        backdrop-filter: blur(10px);
+        /* fallback for old browsers */
+        -webkit-backdrop-filter: blur(60px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
     }
 
     #weather-container-contents {
-        margin: auto 0 ;
-    }
+        width: 100%;
 
-   
+        
+    }
 
     #hourly-forecast {
-        flex-wrap: wrap;
-        gap: .5rem;
-        margin-top: 9rem;
+        margin-top: auto; /* This pushes it to the bottom */
+        margin-bottom: 1rem; /* Add some bottom spacing */
+        padding: 0 1rem;
+        width: calc(100% - 2rem);
+        overflow-x: auto;
     }
+
+    #weather-info {
+        margin-bottom: 2rem;
+    }
+
+  
   }
