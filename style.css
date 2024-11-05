@@ -12,6 +12,27 @@ body {
     margin: 0;
 }
 
+#other-city {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    z-index: 10;
+
+     /* other styles */
+     background: rgba(39, 39, 39, 0.205);
+     backdrop-filter: blur(10px);
+     /* fallback for old browsers */
+     -webkit-backdrop-filter: blur(60px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#other-city:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
 #weather-container {
     width: 25rem;
     padding: 1rem;

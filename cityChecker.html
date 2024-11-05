@@ -14,18 +14,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
 </head>
-
 <body id="vanta">
-    <a href="./cityChecker.html" id="other-city"><p>Check other city</p></a>
+    <a href="./cityChecker.html"id="other-city"><p>Check other city</p></a>
     <div id="weather-container">
-      <div id="weather-container-contents">
-        <h2><a href="index.html">Weather.dev</a></h2>
-        <div id="temp-div"></div>
-        <div id="weather-info"></div>
-        <img id="weather-icon" alt="Weather Icon" style="display: none;">
-        <div id="hourly-forecast"></div>
-      </div>
+        <div id="weather-container-contents">
+            <h2><a href="index.html">Weather.dev</a></h2>
+            <input type="text" id="city" placeholder="Enter city">
+            <button onclick="getWeather()">Search</button>
+            <img id="weather-icon" alt="Weather Icon">
+            <div id="temp-div"></div>
+            <div id="weather-info"></div>
+            <div id="hourly-forecast"></div>
+        </div>
     </div>
-    <script src="script.js"></script>
-  </body>
-</html>
+    <script src="./cityChecker.js"></script>
+</body>
+</body>
