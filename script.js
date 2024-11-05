@@ -2,7 +2,9 @@ function getWeatherData(latitude, longitude) {
     const apiKey = '48eae176860388e00dd35a01cd7de287';
     const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
-  
+    
+
+
     return Promise.all([
       fetch(currentWeatherUrl).then(response => response.json()),
       fetch(forecastUrl).then(response => response.json())

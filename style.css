@@ -173,6 +173,13 @@ button:hover {
   
 
   @media only screen and (max-width: 27rem) {
+    #other-city {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    } 
+
+    
     body {
         align-items: flex-start;
         height: 100vh;
@@ -190,7 +197,7 @@ button:hover {
         flex-direction: column;
         justify-content: center;
 
-        border-radius: 1rem;
+        border-radius: 0;
         /* other styles */
         background: rgba(39, 39, 39, 0.15);
         backdrop-filter: blur(10px);
